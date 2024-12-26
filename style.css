@@ -3,10 +3,45 @@
 *::after {
     box-sizing: border-box;
     font-family: "Sour Gummy", serif;
+    background: #6D28D9;
+    color: #F5F3FF;
+    margin: 5px 10px 0 10px;
 }
 
 .main-pet-emoji {
-    font-size: 4em;
+    font-size: 4.5em;
     margin-left: 0.5em;
     vertical-align: middle;
+    transform: rotate(15deg);
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.title-container h1 {
+    font-size: 2em;
+    margin-left: 0.5em;
+}
+
+select {
+    border : 2px solid #6D28D9;
+    border-radius: 8px;
+    padding: 5px;
+    color: #000;
+    background-color: #F5F3FF;
+
+}
+
+@media(max-width: 600px) {
+    .title-container {
+        flex-direction: row;
+    }
+
+    .main-pet-emoji {
+        font-size: 3.5em;
+        margin-left: 0.5em;
+    }
 }
