@@ -4,22 +4,22 @@ const userInput = document.querySelector('#pet-adjective');
 const submitBtn = document.querySelector('#btn');
 const petNameDisplay = document.querySelector('#pet-name-display');
 
-console.log(userInput);
-console.log(submitBtn);
-console.log(petNameDisplay);
+function capitalizeLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1)
+}
 
 submitBtn.addEventListener('click', () => {
-    console.log('button clicked');
+
     const userAdjective = userInput.value;
-    console.log('selected adjective')
+    const capitalizedAdjective= capitalizeLetter(userAdjective);
     const randomIndex = Math.floor(Math.random() * petNames.length);
     const randomPet = petNames[randomIndex];
-if (userAdjective === "select") {
-    petNameDisplay.textContent = `Please select an adjective`
-} else {
+    if (userAdjective === "select") {
+        petNameDisplay.textContent = `Please select an adjective`
+    } else {
 
-    petNameDisplay.textContent = `Your pet name is ${userAdjective} ${randomPet}`
-}
+        petNameDisplay.textContent = `Your pet name is ${capitalizedAdjective} ${randomPet}`
+    }
 })
 
 

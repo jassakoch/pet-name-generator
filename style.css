@@ -26,21 +26,24 @@
     margin-left: 0.5em;
 }
 
-select {
-    border :2px solid #6D28D9;
+select,
+#btn {
+    border: 2px solid #6D28D9;
     border-radius: 8px;
     padding: 5px;
     color: #000000;
     background-color: #F5F3FF;
-
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
 }
 
 #btn {
-    border :2px solid #6D28D9;
-    border-radius: 8px;
-    padding: 5px;
-    color: #000000;
-    background-color: #F5F3FF;
+    background-color: #FF69B4;
+}
+
+select:hover,
+#btn:hover {
+    transform: translateY(-2px);
 }
 
 @media(max-width: 600px) {
@@ -51,5 +54,12 @@ select {
     .main-pet-emoji {
         font-size: 3.5em;
         margin-left: 0.5em;
+    }
+
+    #btn {
+        display: block;
+        margin: 20px auto;
+        width: 70%;
+
     }
 }
