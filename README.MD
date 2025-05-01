@@ -25,7 +25,7 @@ The Pet Name Generator is a simple web application that allows users to generate
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/your-username/pet-name-generator.git
+    git clone https://github.com/jassakoch/pet-name-generator.git
     ```
 
 2. Navigate to the project directory:
